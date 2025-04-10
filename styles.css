@@ -514,3 +514,121 @@ footer {
 footer p {
     margin: 0.5rem 0;
 }
+
+/* About Section Styling */
+.about-section {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+}
+
+.about-section .container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-section .section-title {
+    color: #2c3e50;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.about-section .section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: #3498db;
+}
+
+.about-section p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Responsive Design for About Section */
+@media (max-width: 768px) {
+    .about-section {
+        padding: 60px 0;
+    }
+    
+    .about-section .section-title {
+        font-size: 2rem;
+    }
+    
+    .about-section p {
+        font-size: 1rem;
+        padding: 0 20px;
+    }
+}
+
+/* Interests Section Styling */
+.interests-section {
+    padding: 80px 0;
+    background-color: var(--white);
+}
+
+.interests-section .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.interests-content {
+    background-color: var(--light-bg);
+    padding: 2.5rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.interests-content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 1.5rem;
+}
+
+.interests-content p:last-child {
+    margin-bottom: 0;
+}
+
+/* Responsive Design for Interests Section */
+@media (max-width: 768px) {
+    .interests-section {
+        padding: 60px 0;
+    }
+    
+    .interests-content {
+        padding: 1.5rem;
+    }
+    
+    .interests-content p {
+        font-size: 1rem;
+    }
+}
+
+/* Technology Badges Styling */
+.tech-badge {
+    height: 28px;
+    margin: 0 5px;
+    vertical-align: middle;
+    transition: transform 0.3s ease;
+}
+
+.tech-badge:hover {
+    transform: translateY(-2px);
+}
+
+/* Responsive Design for Technology Badges */
+@media (max-width: 768px) {
+    .tech-badge {
+        height: 24px;
+        margin: 0 3px;
+    }
+}
